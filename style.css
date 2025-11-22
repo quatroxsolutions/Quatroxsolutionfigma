@@ -101,7 +101,7 @@
 /* ⭐ Mobile (below 767px) */
 @media (max-width: 767px) {
     .hero {
-        height: 40vh;
+        height: 20vh;
         padding: 0 20px;
         justify-content: center;
     }
@@ -111,7 +111,7 @@
     }
 
     .hero-content h1 {
-        font-size: 40px;
+        font-size: 80px;
         padding-top: 150px;
         line-height: 1.1;
     }
@@ -255,5 +255,6 @@ footer {
     display: block;
     object-fit: cover;  /* Ensures it matches section shape */
 }
+
 
 
