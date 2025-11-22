@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quatrox Solutions</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="nav-bar">
+        <div class="nav-content">
+          <img src="Logo.png" alt="Logo" class="logo" />
+            <div></div>
+
+            <!-- RIGHT SIDE LOGO -->
+            <!-- SIDE EMPTY (If you need menu later) -->
+        </div>
+    </nav>
+
+    <!-- HEADER SECTION -->
+    <header class="hero">
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+            <h1>Quatrox Solutions</h1>
+            <p> Quality  Unmatched  Accuracy  Trust  Reliability <p> On-time  Xcellence. </p>
+        </div>
+    </header>
+    
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome Section - Quatrox Solutions</title>
+  <style>
+
+    .welcome-section {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s ease-out;
+}
+
+    
+    body{
+      margin:0;
+      font-family: Arial, sans-serif;
+      background:#f7f7f7;
+    }
+
+    .welcome-section{
+      width:100%;
+      max-width:1200px;
+      margin:80px auto;
+      padding:20px;
+      display:flex;
+      flex-direction:column;
+      gap:60px;
+    }
+
+    .welcome-title{
+      font-size:40px;
+      font-weight:600;
+      color:#000;
+      text-align:left;
+    }
+
+    .welcome-body{
+      display:flex;
+      gap:48px;
+      flex-wrap:wrap;
+      font-size:22px;
+      color:#000;
+      line-height:1.35;
+    }
+
+    .welcome-body div{
+      flex:1;
+      min-width:280px;
+    }
+
+    .welcome-button{
+      background:#302828;
+      color:#fff;
+      padding:18px 24px;
+      text-decoration:none;
+      border-radius:500px;
+      font-size:18px;
+      width:fit-content;
+    }
+  </style>
+</head>
+<body>
+  
+
+<section class="welcome-section">
+
+  <h2 class="welcome-title">Welcome to Quatrox Solutions</h2>
+  
+
+  <div class="welcome-body">
+    <div>
+      <p>Quatrox Solutions is a global provider of advanced technology services, dedicated to delivering high-quality, innovative solutions to meet the evolving demands of the publishing industry. By harnessing a comprehensive suite of technical capabilities and deep domain expertise, Quatrox Solutions enables seamless content transformation through state‑of‑the‑art technologies and strategic insight.</p>
+    </div>
+
+    <div>
+      <p>We have a unique and highly motivated team dedicated to addressing challenges with efficiency, precision, and innovation.</p>
+    </div>
+  </div>
+
+  <a href="#" class="welcome-button">Contact us</a>
+
+</section>
+
+<script>
+  const welcome = document.querySelector(".welcome-section");
+
+  window.addEventListener("scroll", () => {
+    const pos = welcome.getBoundingClientRect().top;
+
+    if (pos < window.innerHeight * 0.85) {
+      welcome.style.opacity = "1";
+      welcome.style.transform = "translateY(0)";
+    }
+  });
+</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Image Section</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* FULL-WIDTH IMAGE SECTION */
+        .image-section{
+            width:100%;
+            height:900px; /* adjust height if you want */
+            position:relative;
+        }
+
+        .image-section img{
+            width:100%;
+            height:100%;
+        }
+    </style>
+    <style>
+.reveal-text {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: all 0.8s ease-out;
+}
+.reveal-text.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+</style>
+<style>
+.footer {
+  width: 100%;
+  background: #f7f4eb;
+  padding: 68px 152px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.footer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-header img {
+  width: 63px;
+  height: 63px;
+  object-fit: cover;
+}
+
+.footer-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.footer-subtext {
+  font-size: 18px;
+  margin-top: 20px;
+  line-height: 1.4;
+  max-width: 60%;
+}
+
+.footer-columns {
+  display: flex;
+  gap: 45px;
+  margin-top: 40px;
+}
+
+.footer-col p, 
+.footer-col a {
+  font-size: 14px;
+  margin: 3px 0;
+  color: black;
+}
+
+.footer-col a {
+  text-decoration: underline;
+}
+
+.footer-copy {
+  margin-top: 32px;
+  font-size: 14px;
+}
+
+/* Tablet */
+@media (max-width: 1280px) {
+  .footer {
+    padding: 68px 28px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+  .footer-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+  .footer-subtext {
+    max-width: 100%;
+  }
+  .footer-columns {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+</style>
+
+
+</head>
+<body>
+
+    <!-- ⭐ IMAGE SECTION -->
+    <div class="image-section">
+        <img src="home.png" alt="Image" />
+    </div>
+    
+    <script>
+window.addEventListener("scroll", function () {
+    const elements = document.querySelectorAll('.reveal-text');
+    elements.forEach(el => {
+        const pos = el.getBoundingClientRect().top;
+        const winHeight = window.innerHeight;
+
+        if (pos < winHeight - 70) {
+            el.classList.add("active");
+        }
+    });
+});
+</script>
+
+</body>
+<!-- WHAT WE OFFER SECTION -->
+<section class="offer-wrapper">
+    <div class="offer-left">
+        <h2>What We Offer</h2>
+    </div>
+
+    <div class="offer-right">
+    <h3>EPub Conversion</h3>
+    <h3 class="reveal-text">XML Conversion</h3>
+    <h3 class="reveal-text">Copy Editing</h3>
+    <h3 class="reveal-text">Accessibility Services</h3>
+    <h3 class="reveal-text">Typesetting</h3>
+    <h3 class="reveal-text more">+More</h3>
+    
+    <button class="service-btn">Services</button>
+</div>
+</section>
+<footer>
+    <div class="footer-container">
+        <img src="home footer.png" class="footer-img" alt="Footer Banner">
+    </div>
+    <footer class="footer">
+
+  <!-- Header -->
+  <div class="footer-header">
+    <a href="#top">
+    <img src="Logo.png" class="footer-img" alt="Logo">
+</a>
+    <p class="footer-title">QUATROX SOLUTIONS PRIVATE LIMITED</p>
+  </div>
+
+  <!-- Sub text -->
+  <p class="footer-subtext">
+    To be a trusted partner in delivering exceptional, fast, and reliable customer
+    services to organizations of all sizes — from startups to global enterprises.
+  </p>
+
+  <!-- Contact Columns -->
+  <div class="footer-columns">
+
+      <div class="footer-col">
+        <p>Contact@quatroxsolutions.com</p>
+        <p>+91 7200801765</p>
+      </div>
+
+      <div class="footer-col">
+        <p>16-74A, HMP Towers Market Rd,</p>
+        <p>Thuckalay, Tamilnadu,</p>
+        <p>India, Pincode - 629175</p>
+      </div>
+
+      <div class="footer-col">
+        <a href="https://www.instagram.com/quatrox_solutions">Instagram</a><br>
+        <a href="https://www.linkedin.com/in/quatrox-data-solutions-a29792378">LinkedIn</a><br>
+        <a href="https://wa.me/917200801765">Whatsapp</a>
+      </div>
+
+  </div>
+
+  <!-- Copyright -->
+  <p class="footer-copy">
+    Quatrox Solutions Pvt Ltd © 2025 All Rights Reserved
+  </p>
+
+</footer>
+
+</footer>
+
+</html>
