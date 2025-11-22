@@ -101,7 +101,7 @@
 /* ⭐ Mobile (below 767px) */
 @media (max-width: 767px) {
     .hero {
-        height: 20vh;
+        height: 50vh;
         padding: 0 20px;
         justify-content: center;
     }
@@ -111,7 +111,7 @@
     }
 
     .hero-content h1 {
-        font-size: 100px;
+        font-size: 43px;
         padding-top: 150px;
         line-height: 1.1;
     }
