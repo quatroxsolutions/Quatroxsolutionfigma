@@ -5,8 +5,9 @@
     box-sizing: border-box;
 }
 
-/* ---------- NAVIGATION BAR ---------- */
-
+/* -----------------------------------
+   NAVIGATION BAR
+----------------------------------- */
 .nav-bar {
     width: 100%;
     background: linear-gradient(to right, #0D0D29, #010103);
@@ -14,7 +15,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: 103px;
+    height: 90px;
     display: flex;
     align-items: center;
     z-index: 1000;
@@ -27,35 +28,32 @@
     align-items: center;
 }
 
-/* LOGO (YOU WILL REPLACE IMAGE FILE) */
 .logo {
     height: 60px;
     width: auto;
     object-fit: contain;
 }
 
-/* ---------- HERO SECTION ---------- */
-
+/* -----------------------------------
+   HERO SECTION
+----------------------------------- */
 .hero {
     width: 100%;
     height: 100vh;
     background: url("hero-bg.png") no-repeat center center/cover;
     position: relative;
     display: flex;
-    align-items: flex-start;
-    justify-content: left;
-    padding: 0 50px;
-    margin-top: 103px; /* below navbar */
+    align-items: center;
+    padding: 0 60px;
+    margin-top: 90px;
 }
 
-/* DARK OVERLAY */
 .overlay {
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.4);
 }
 
-/* TEXT BLOCK */
 .hero-content {
     position: relative;
     text-align: left;
@@ -63,153 +61,48 @@
     max-width: 900px;
 }
 
-/* MAIN HEADING */
 .hero-content h1 {
-    font-size: 100px;
+    font-size: 80px;
     font-weight: 700;
     margin-bottom: 20px;
-    padding-top: 300px;
 }
 
-/* SUBTEXT */
 .hero-content p {
     font-size: 24px;
     line-height: 1.4;
-    max-width: 1000px;
 }
 
-/* ---------------------------------------- */
-/*              RESPONSIVE DESIGN           */
-/* ---------------------------------------- */
+/* -----------------------------------
+   OFFER SECTION
+----------------------------------- */
 
-/* ⭐ Tablets (768px – 1024px) */
-/* ================================
-   HERO RESPONSIVE FIX
-================================ */
-
-/* Tablet */
-@media (max-width: 1024px) {
-    .hero {
-        height: 70vh;
-        padding: 0 30px;
-        margin-top: 80px;
-    }
-
-    .hero-content h1 {
-        font-size: 60px;
-        padding-top: 200px;
-    }
-
-    .hero-content p {
-        font-size: 18px;
-    }
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-    .hero {
-        height: 70vh;
-        padding: 0 20px;
-        margin-top: 60px;
-        background-position: center top;
-    }
-
-    .hero-content h1 {
-        font-size: 36px;
-        padding-top: 140px;
-        line-height: 1.1;
-    }
-
-    .hero-content p {
-        font-size: 16px;
-        max-width: 90%;
-        line-height: 1.3;
-    }
-}
-
-/* ---------- RESPONSIVE ---------- */
-
-@media (max-width: 768px) {
-    .hero-content h1 {
-        font-size: 48px;
-    }
-
-    .hero-content p {
-        font-size: 18px;
-    }
-
-    .logo {
-        height: 45px;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-content h1 {
-        font-size: 36px;
-    }
-
-    .hero-content p {
-        font-size: 16px;
-    }
-
-    .nav-bar {
-        padding: 15px 20px;
-    }
-}
 .offer-wrapper {
     width: 100%;
-    max-width: none;
-    height: auto;
-    min-height: 617px;
-    margin: 0;
     background: #0D0D29;
-
     display: flex;
-    flex-direction: row;
-    padding: 93px 0 126px 152px;
-    gap: 120px;
-    box-sizing: border-box;
+    padding: 80px 10%;
+    gap: 100px;
 }
 
-
-/* LEFT SIDE */
 .offer-left h2 {
     color: #F7F4EB;
-    font-size: 32px;
+    font-size: 38px;
     font-weight: 600;
-    margin: 0;
 }
 
-/* RIGHT SIDE SERVICE LIST */
 .offer-right h3 {
     color: #F7F4EB;
     font-size: 55px;
     font-weight: 400;
-    line-height: 1.1;
-    margin: 0;
-}
-/* FLICKER ANIMATION */
-.flicker-text {
-    animation: flickerEffect 1.2s infinite;
+    margin: 15px 0;
 }
 
-@keyframes flickerEffect {
-    0% { opacity: 1; }
-    20% { opacity: 0.7; }
-    40% { opacity: 0.9; }
-    60% { opacity: 0.5; }
-    80% { opacity: 1; }
-    100% { opacity: 0.8; }
-}
-
-
-/* +MORE DIFFERENT COLOR */
 .offer-right .more {
     color: #8E8A84;
 }
-/* BUTTON */
+
 .service-btn {
-    margin-top: 40px;
+    margin-top: 30px;
     padding: 16px 32px;
     font-size: 18px;
     border: none;
@@ -219,12 +112,49 @@
     cursor: pointer;
 }
 
-/* RESPONSIVE — TABLET */
+/* -----------------------------------
+   FOOTER SECTION
+----------------------------------- */
+footer {
+    width: 100%;
+    background: #000;
+}
+
+.footer-container {
+    width: 100%;
+}
+
+.footer-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* -----------------------------------
+   RESPONSIVE DESIGN
+----------------------------------- */
+
+/* ----------- TABLET 1024px ----------- */
 @media (max-width: 1024px) {
+
+    .hero {
+        height: 70vh;
+        padding: 0 40px;
+    }
+
+    .hero-content h1 {
+        font-size: 55px;
+    }
+
+    .hero-content p {
+        font-size: 20px;
+    }
+
     .offer-wrapper {
         flex-direction: column;
-        padding: 60px 40px;
         gap: 40px;
+        padding: 70px 5%;
     }
 
     .offer-right h3 {
@@ -232,33 +162,71 @@
     }
 }
 
-/* RESPONSIVE — MOBILE */
-@media (max-width: 600px) {
+/* ----------- MOBILE 768px ----------- */
+@media (max-width: 768px) {
+
+    .nav-bar {
+        padding: 15px 20px;
+        height: 75px;
+    }
+
+    .logo {
+        height: 45px;
+    }
+
+    .hero {
+        height: 70vh;
+        padding: 0 25px;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+        max-width: 90%;
+    }
+
+    .offer-wrapper {
+        padding: 60px 20px;
+    }
+
     .offer-right h3 {
         font-size: 32px;
     }
 
     .service-btn {
-        padding: 14px 28px;
+        padding: 12px 26px;
         font-size: 16px;
     }
 }
-footer {
-    width: 100%;
-    overflow: hidden; /* Prevents image from coming out */
+
+/* ----------- SMALL MOBILE 480px ----------- */
+@media (max-width: 480px) {
+
+    .hero {
+        height: 60vh;
+        padding: 0 18px;
+        margin-top: 70px;
+        background-position: center top;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+        line-height: 1.1;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+        line-height: 1.3;
+    }
+
+    .offer-wrapper {
+        padding: 50px 15px;
+    }
+
+    .offer-right h3 {
+        font-size: 28px;
+    }
 }
-
-.footer-container {
-    width: 100%;
-    max-width: 100%;
-}
-
-.footer-img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;  /* Ensures it matches section shape */
-}
-
-
-
