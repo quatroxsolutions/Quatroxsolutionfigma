@@ -83,20 +83,96 @@
 /* ---------------------------------------- */
 
 /* ⭐ Tablets (768px – 1024px) */
+/* ================================
+   HERO RESPONSIVE FIX
+================================ */
+
+/* Tablet */
 @media (max-width: 1024px) {
     .hero {
+        height: 70vh;
         padding: 0 30px;
+        margin-top: 80px;
     }
 
     .hero-content h1 {
-        font-size: 70px;
-        padding-top: 220px;
+        font-size: 60px;
+        padding-top: 200px;
     }
 
     .hero-content p {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
+
+/* Mobile */
+@media (max-width: 600px) {
+    .hero {
+        height: 70vh;
+        padding: 0 20px;
+        margin-top: 60px;
+        background-position: center top;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+        padding-top: 140px;
+        line-height: 1.1;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+        max-width: 90%;
+        line-height: 1.3;
+    }
+}
+📌 Your Hero Will Now Look Proper on Mobile:
+✔ Image fits screen
+✔ Title becomes smaller
+✔ Text is readable
+✔ No white blank space
+✔ Content stays inside the hero section
+
+👉 If you want, I can also:
+✅ Adjust the hero height
+✅ Change text position
+✅ Make logo and nav responsive
+✅ Fix footer layout
+
+Just upload a screenshot again or say:
+“Fix full website responsiveness”
+
+
+
+
+
+
+
+
+/* ⭐ Mobile (below 767px) */
+@media (max-width: 767px) {
+    .hero {
+        height: 40vh;
+        padding: 0 20px;
+        justify-content: center;
+    }
+
+    .hero-content {
+        text-align: left;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+        padding-top: 150px;
+        line-height: 1.1;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+        max-width: 90%;
+    }
+}
+
 
 /* ---------- RESPONSIVE ---------- */
 
@@ -230,6 +306,5 @@ footer {
     display: block;
     object-fit: cover;  /* Ensures it matches section shape */
 }
-
 
 
