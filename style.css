@@ -115,6 +115,45 @@
 /* -----------------------------------
    FOOTER SECTION
 ----------------------------------- */
+/* FOOTER HEADER — LOGO + TITLE SIDE BY SIDE */
+.footer-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+}
+
+/* LOGO */
+.footer-logo {
+    width: 60px;
+    height: auto;
+}
+
+/* COMPANY NAME */
+.footer-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    line-height: 1.2;
+}
+
+/* ---------- MOBILE FIX ---------- */
+@media (max-width: 600px) {
+    .footer-header {
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .footer-logo {
+        width: 45px;  /* smaller logo */
+    }
+
+    .footer-title {
+        font-size: 16px;   /* smaller text */
+        line-height: 1.1;
+    }
+}
+
 footer {
     width: 100%;
     background: #000;
