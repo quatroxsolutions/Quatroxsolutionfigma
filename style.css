@@ -264,8 +264,29 @@ footer {
     .offer-wrapper {
         padding: 50px 15px;
     }
+/* MOBILE (480px) — What We Offer smaller, service list bigger */
+@media (max-width: 480px) {
+
+    /* MAKE "WHAT WE OFFER" SMALLER */
+    .offer-left h2 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    /* MAKE THE SERVICES BIGGER + FULL WIDTH */
+    .offer-right h3 {
+        font-size: 36px;  /* bigger */
+        line-height: 1.2;
+        width: 100%;
+    }
+
+    .offer-wrapper {
+        padding: 50px 20px;
+    }
+}
 
     .offer-right h3 {
         font-size: 28px;
     }
 }
+
