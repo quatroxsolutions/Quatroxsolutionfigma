@@ -1,0 +1,219 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Geist", sans-serif;
+    background: #000;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    padding: 20px 50px;
+    background: linear-gradient(to right, #0D0D29, #010103);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 60px;
+}
+
+/* HEADER SECTION */
+.header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin-top: 100px; /* space for fixed navbar */
+}
+
+.header-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.45);
+    position: absolute;
+    inset: 0;
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* MAIN TITLE */
+.header-content h1 {
+    color: #F2F2F2;
+    font-size: 160px;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: -3px;
+    white-space: nowrap;
+}
+
+/* SUBTITLE */
+.header-content h2 {
+    color: #F2F2F2;
+    font-size:38px;
+    font-weight: 650;
+    width: 70%;
+    margin-top: 30px;
+}
+
+/* ------------------------------
+   RESPONSIVE DESIGN
+------------------------------- */
+
+/* TABLET */
+@media (max-width: 1280px) {
+    .header-content h1 {
+        font-size: 80px;
+    }
+    .header-content h2 {
+        font-size: 26px;
+        width: 90%;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 800px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+    .logo {
+        height: 45px;
+    }
+    .header {
+        height: 90vh;
+        margin-top: 75px;
+    }
+    .header-content {
+        padding: 0 20px;
+        text-align: left;
+        align-items: left;
+    }
+    .header-content h1 {
+    font-size: 56px;
+    white-space: normal;
+    z-index: 1;
+    line-height: 1.1;  /* <-- reduces space between lines */
+}
+
+    }
+    .header-content h2 {
+        font-size: 20px;
+        width: 100%;
+    }
+/* Welcome Section Background */
+.welcome-section {
+    background: #F2F2F2;
+    padding: 80px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-left: 80px;   /* <<< ADD THIS FOR LEFT SPACING */
+}
+
+/* Title */
+.welcome-title {
+    font-size: 32px;
+    font-weight: 600;
+    font-family: "Geist", sans-serif;
+    color: #000;
+    margin-bottom: 50px;
+    text-align: left;
+    padding-left: 80px;   /* <<< ADD THIS FOR LEFT SPACING */
+}
+
+/* Body Content */
+.welcome-content {
+    display: flex;
+    gap: 48px;
+    max-width: 1100px;
+    width: 100%;
+    justify-content: left;
+    padding-left: 80px;   /* <<< ADD THIS FOR LEFT SPACING */
+}
+
+.welcome-column {
+    flex: 1;
+}
+
+.welcome-column p {
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: "Geist", sans-serif;
+    color: #000;
+}
+
+/* Contact Button */
+.welcome-btn {
+    margin-top: 40px;
+    background: #302828;
+    color: white;
+    padding: 16px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Geist", sans-serif;
+    margin-left: 80px;   /* Adjust left spacing */
+
+
+    /* Fix width + alignment */
+    display: inline-block;
+    width: auto;
+    text-align: left;
+    align-self: flex-start;   /* <<< THIS MAKES BUTTON ALIGN LEFT */
+    white-space: nowrap;      /* Prevent text breaking */
+}
+
+.welcome-btn:hover {
+    opacity: 0.85;
+}
+
+
+/* --------------------------
+   RESPONSIVE
+--------------------------- */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .welcome-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .welcome-section {
+        padding: 50px 40px;
+    }
+
+    .welcome-title {
+        font-size: 26px;
+    }
+
+    .welcome-column p {
+        font-size: 16px;
+    }
+}
