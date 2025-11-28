@@ -1,7 +1,7 @@
 /* RESET */
 * {
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
     box-sizing: border-box;
 }
 
@@ -74,7 +74,7 @@ body {
 .header-content h2 {
     color: #F2F2F2;
     font-size:38px;
-    font-weight: 650;
+    font-weight: 450;
     width: 70%;
     margin-top: 30px;
 }
@@ -107,7 +107,7 @@ body {
         margin-top: 75px;
     }
     .header-content {
-        padding: 0 20px;
+        padding: 10px;
         text-align: left;
         align-items: left;
     }
@@ -141,7 +141,7 @@ body {
     color: #000;
     margin-bottom: 50px;
     text-align: left;
-    padding-left: 80px;   /* <<< ADD THIS FOR LEFT SPACING */
+    padding-left:  80px;   /* <<< ADD THIS FOR LEFT SPACING */
 }
 
 /* Body Content */
@@ -214,6 +214,153 @@ body {
     }
 
     .welcome-column p {
+        font-size: 16px;
+    }
+}
+/* Mobile */
+@media (max-width: 600px) {
+
+    .welcome-section,
+    .welcome-title,
+    .welcome-content,
+    .welcome-btn {
+        padding-left: 20px !important;   /* Move text closer to the left */
+        margin-left: 0 !important;        /* Remove extra left margin */
+    }
+
+    .welcome-content {
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+/* Text hidden at start */
+.fade-text {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Text visible when scrolled */
+.fade-text.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Image wrapper */
+.responsive-image {
+    width: 100%;
+    height: 100vh;       /* full screen height */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Image settings */
+.responsive-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    /* makes image fill without stretching */
+    object-position: center;
+}
+
+
+/* ---------- TABLET ---------- */
+@media (max-width: 1280px) {
+    .responsive-image {
+        height: 70vh;     /* reduce height for tablet */
+    }
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 800px) {
+    .responsive-image {
+        height: 55vh;     /* perfect mobile size */
+    }
+
+    .responsive-image img {
+        object-position: center top;   /* adjust framing for mobile */
+    }
+}
+/* SECTION BACKGROUND */
+.what-we-offer-section {
+    background: #0D0D29;
+    padding: 120px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;   /* LEFT */
+}
+
+/* MAIN TITLE */
+.what-we-offer-title {
+    color: #F7F4EB;
+    font-family: "Geist", sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: -1.6px;
+    margin-bottom: 40px; /* space before service title */
+}
+
+/* SERVICE TITLE (Matches Figma Size) */
+.service-title {
+    color: #F7F4EB;
+    font-family: "Geist", sans-serif;
+    font-size: 76px;
+    font-weight: 400;
+    letter-spacing: -4.5px;
+    line-height: 0.95;
+    white-space: nowrap;
+}
+
+/* Tablet */
+@media (max-width: 1280px) {
+    .service-title {
+        font-size: 48px;
+        letter-spacing: -3px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+    .what-we-offer-section {
+        padding: 80px 20px;
+    }
+
+    .service-title {
+        font-size: 42px;
+        letter-spacing: -1px;
+        white-space: normal;
+        line-height: 1.1;
+    }
+}
+.service-btn {
+    display: inline-block;
+    background: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    font-family: "Geist", sans-serif;
+    font-size: 18px;
+    padding: 18px 33px;
+    border-radius: 500px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    font-weight: 500;
+}
+
+/* Hover Effect */
+.service-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Tablet */
+@media (max-width: 1280px) {
+    .service-btn {
+        padding: 16px 30px;
+        font-size: 17px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+    .service-btn {
+        padding: 14px 26px;
         font-size: 16px;
     }
 }
